@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>TH elements define table headers</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>9:00 AM-9:55 AM</th>
+    <th>10:00 AM-10:55 AM</th>
+    <th>11:00 AM-11:55 AM</th>
+    <th>12:00 PM-12:55 PM</th>
+    <th>13:00 PM-13:55 PM</th>
+    <th>14:00 PM-14:55 PM</th>
+    <th>15:00 PM-15:55 PM</th>
+    <th>16:00 PM-16:55 PM</th>
+    <th>17:00 PM-17:55 PM</th>
+  </tr>
+  <tr>
+    <th>Monday</th>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <th>Tuesday</th>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <th>Wednesday</th>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <th>Thursday</th>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <th>Friday</th>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <th>Saturday</th>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>

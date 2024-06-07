@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tableApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Table Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="q4.js"></script>
+    <link rel="stylesheet" href="q4.css">
+</head>
+<body ng-controller="TableController">
+    <h1>Employee Table</h1>
+
+    <label for="order">Sort by:</label>
+    <select ng-model="sortField" id="order">
+        <option value="name">Name</option>
+        <option value="age">Age</option>
+        <option value="department">Department</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees | orderBy:sortField" ng-class="{ 'even': $even, 'odd': $odd }">
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.age }}</td>
+                <td>{{ employee.department }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>

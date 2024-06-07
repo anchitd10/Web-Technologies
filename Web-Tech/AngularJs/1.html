@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ng-mouseup Example</title>
+    <script src="angular-1.8.2/angular.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="MouseController">
+    <button ng-mouseup="handleMouseUp()">Click Me</button>
+    <p ng-show="showMessage">Mouse button released!</p>
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('MouseController', function($scope) {
+        $scope.showMessage = false;
+
+        $scope.handleMouseUp = function() {
+            $scope.showMessage = true;
+        };
+    });
+</script>
+
+</body>
+</html>

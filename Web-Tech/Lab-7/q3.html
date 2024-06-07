@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="filterApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Search Filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="q3.js"></script>
+</head>
+<body ng-controller="FilterController">
+    <h1>Search Filter</h1>
+    
+    <input type="text" ng-model="searchQuery" placeholder="Search here..." />
+    
+    <ul>
+        <li ng-repeat="item in items | filter:searchQuery">{{ item }}</li>
+    </ul>
+</body>
+</html>

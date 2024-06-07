@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Footer Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .content-wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <h1>Sticky Footer Example</h1>
+            <p>This example demonstrates a sticky footer. The footer remains at the bottom of the viewport if the content is shorter, but it is pushed down as content grows.</p>
+            <p>Here's some additional content to simulate a longer page...</p>
+        </div>
+
+        <div class="footer">
+            <p>© Anchit Das || SAP ID: 500107460</p>
+        </div>
+    </div>
+</body>
+</html>

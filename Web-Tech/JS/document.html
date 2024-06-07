@@ -1,0 +1,54 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Document Properties</TITLE>
+</HEAD>
+
+<BODY>
+    <SCRIPT type=”text/javascript”>
+    document.fgColor = 'green'; // sets text color
+    document.bgColor = 'yellow'; // background color
+    document.title = 'Chakde India'; // change title
+    document.linkColor = 'navy'; // hyperlinks color
+    document.alinkColor = 'red'; // active links
+    document.vlinkColor = 'lime'; // visited hyperlinks
+    document.write(“<BR>Do you want to play for India?”);
+    document.write(“<BR> <A href='yes.html'> Yes </A>”);
+    document.writeln(“<BR> <A href='no.html'>No</A><BR>”);
+    document.write(“<BR>Title of current document: “ + document.title);
+    Computers and Communication Technology
+    286
+    10.6.2 DATE OBJECT
+    This object is used to set and manipulate date and time. JavaScript
+    dates are stored as the number of milliseconds since midnight, January
+    1, 1970. This date is called the epoch. Dates before 1970 are represented
+    by negative numbers. A date object can be created by using the new
+    keyword with Date().
+    Syntax
+    newDate()
+    new Date(milliseconds)
+    new Date(dateString)
+    new Date(yr_num, mo_num, day_num
+    [, hr_num, min_num, sec_num, ms_num])
+    Parameters
+    Milliseconds Milliseconds since 1 January 1970
+    00:00:00.
+    dateString Date String. e.g. “October 5, 2007”
+    yr_num, mo_num,day_num Year (e.g. 2007)Month (Value 0-11, 0 for
+    January and 11 for December), Day (1-31)
+    hr_num, min_num,sec_num, ms_num Values for Hour, Minutes, Second and
+    milliseconds
+    document.write(“<BR>Height of current document: “ + document.height);
+    document.write(“<BR>Width of current document: “ + document.width);
+    document.write(“<BR> URL of current document is: “ + document.URL);
+    //Use of document.links to list of all the hyperlinks
+    document.write(“<BR><B>The List of Links in current document</B>”);
+    var links = document.links;
+    for(var i = 0; i < links.length; i++)
+    {
+    document.write(“<BR>”+ document.links[i]);
+    }
+    </SCRIPT>
+</BODY>
+
+</HTML>

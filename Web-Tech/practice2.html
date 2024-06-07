@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <form action="" name="myForm">
+        Employee name : <input type="text" name="ename" ng-model="ename" required><br><br>
+        <p ng-show="myForm.ename.$touched && myForm.ename.$invalid">Fill details please</p><br><br>
+        Employee email : <input type="email" name="eemail" ng-model="eemail" required><br><br>
+        <p ng-show="myForm.eemail.$touched && myForm.eemail.$invalid">Fill details please</p><br><br>
+        Employee salary : <input type="number" name="esal" ng-model="esal" required><br><br>
+        <p ng-show="myForm.esal.$touched && myForm.esal.$invalid">Fill details please</p><br><br>
+        <button type="button" ng-click="addEmployee()">Add Employee</button>
+    </form>
+    <h2>Employee Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Salary</th>
+        </tr>
+        <tr ng-repeat="employee in employees | orderBy : parseSalary">
+            <td> {{employee.name}} </td>
+            <td> {{employee.email}} </td>
+            <td> {{employee.salary}} </td>
+        </tr>
+    </table>
+    <script>
+        let myApp = angular.module('myApp', []);
+        myApp.controller('myCtrl', function($scope){
+            $scope.employees = [
+                {name : 'Vyom', email : 'v@g', salary : 100000},
+                {name : 'Ayush', email : 'a@g', salary : 50000},
+            ];
+            $scope.addEmployee = function() {
+                $scope.employees.push(
+                    {name : $scope.ename, email : $scope.eemail, salary : $scope.esal}
+                );
+            }
+            $scope.parseSalary = function(employee){
+                return parseInt(employee.salary);
+            }
+        });
+    </script>
+</body>
+</html>

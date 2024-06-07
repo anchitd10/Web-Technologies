@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="costCalculatorApp"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Cost Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> 
+    <script src="q2.js"></script> 
+</head>
+<body ng-controller="CostCalculatorController">
+    <h1>Cost Calculator</h1>
+
+    <div>
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" ng-model="item.name" placeholder="Enter item name">
+
+        <label for="itemQuantity">Quantity:</label>
+        <input type="number" id="itemQuantity" ng-model="item.quantity" placeholder="Enter quantity" min="1">
+
+        <label for="itemPrice">Price per unit:</label>
+        <input type="number" id="itemPrice" ng-model="item.price" placeholder="Enter price per unit" min="0">
+
+        <button ng-click="addItem()">Add Item</button> 
+    </div>
+
+    <div>
+        <h2>Items</h2>
+        <ul>
+            <li ng-repeat="item in items track by $index">
+                {{ item.name }}: {{ item.quantity }} x {{ item.price | currency }} = {{ item.quantity * item.price | currency }}
+                <button ng-click="removeItem($index)">Remove</button>
+            </li>
+        </ul>
+
+        <h2>Total Cost</h2>
+        <p>{{ getTotalCost() | currency }}</p>
+    </div>
+</body>

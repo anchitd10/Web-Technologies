@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Q2-form</title>
+    <script src="q2.js"></script>
+</head>
+<body>
+    <main>
+        <video autoplay muted loop id="Video">
+            <source src="montage-video-UPES-Web.webm" type="video/webm">
+          </video>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="Q2-form.html" class="sign-in">
+                        <div class="logo">
+                            <img src="logo.png">
+                            <h3>Registration Portal</h3>
+                        </div>
+
+                        <div class="heading">
+                            <h1>Welcome</h1>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" class="input-field" id="name" required>
+                                <label for="name">Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="number" class="input-field" id="age" required>
+                                <label for="age">Age</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="date" class="input-field" id="dob" required>
+                                <label for="dob">Date of Birth</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <label for="course">Course</label>
+                                <select name="course" class="input-field" id="cars" required>
+                                    <option value="select">Select course</option>
+                                    <option value="btech">B.Tech</option>
+                                    <option value="bdes">B.Des</option>
+                                    <option value="bpharm">B.Pharm</option>
+                                    <option value="bsc">B.SC</option>
+                                </select>
+                            </div>
+
+                            <input type="submit" value="Register" class="register">
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
+            
+                    <!-- <img src="carouselpng.png"> -->
+
+                </div>
+            </div>
+        </div>
+        <!-- <script src="q2.js"></script> -->
+    </main>
+</body>
+</html>

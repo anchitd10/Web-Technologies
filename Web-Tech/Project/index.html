@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebronics Zeb-Thunder Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div id="logo">
+            <img src="Assets/logo.png" alt="Zebronics Logo">
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#about-section">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-info"></i> -->
+                            <ion-icon name="information-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#products-section">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-headphones"></i> -->
+                            <ion-icon name="headset-outline"></ion-icon>
+                        </span>
+                        <span class="text">Products</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#features-section">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-book"></i> -->
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </span>
+                        <span class="text">Features</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink() {
+                list.forEach((item) => item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) => item.addEventListener('click', activeLink));
+        </script>
+        <!-- Main Navigation Bar -->
+
+        <div class="login">
+            <a href="login.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+        </div>
+    </header>
+    <!-- Header Navbar -->
+
+    <!-- background video -->
+    <div class="bg-video">
+        <video autoplay loop muted>
+            <source src="Assets/Final Ad.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- title -->
+    <div class="mainpage">
+        <!-- <h3 id="zebronics">Zebronics</h3>
+        <h3 id="zeb">ZEB</h3>
+        <h1 id="thunder">THUNDER</h1>
+        <h4 id="pro">PRO</h4> -->
+    </div>
+
+
+    <!-- Sections of body -->
+    <section class="blue">
+        <h3 id="zebronics">Zebronics</h3>
+        <h3 id="zeb">ZEB</h3>
+        <h1 id="thunder">THUNDER</h1>
+        <h4 id="pro">PRO</h4>
+        <!-- <div class="wave"></div> -->
+    </section>
+
+    <div class="spacer layer1"></div>
+    <section class="pink" id="about-section">
+        <!-- <h1 id="about">About</h1> -->
+
+        <h3 id="caption1">Elevate your Music Experience</h3>
+        <p id="p1">Discover the ultimate in headphone technology.</p>
+        <svg id="blob1" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(507.6962109208904 278.5080397573759)">
+                <path
+                    d="M186 -178C228.6 -143.3 242.3 -71.7 236.9 -5.4C231.5 60.8 207 121.6 164.3 149.7C121.6 177.9 60.8 173.3 -6.5 179.8C-73.8 186.3 -147.5 203.8 -203.8 175.7C-260 147.5 -298.8 73.8 -292.8 6C-286.8 -61.8 -236 -123.5 -179.8 -158.2C-123.5 -192.8 -61.8 -200.4 4.9 -205.4C71.7 -210.3 143.3 -212.6 186 -178"
+                    fill="#BB004B">
+                </path>
+            </g>
+        </svg>
+        <img id="person1" src="Assets/person1.png">
+
+
+        <h3 id="caption2">Hear the Difference,<br>Live the Experience</h3>
+        <p id="p2">Our headphones transform ordinary listening<br>into extraordinary experiences.</p>
+        <svg id="blob2" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(442.59174371044605 317.31182197694477)">
+                <path
+                    d="M214.1 -211.1C269.1 -159.1 299.5 -79.5 279.7 -19.9C259.8 39.8 189.6 79.6 134.6 113.7C79.6 147.9 39.8 176.4 -4 180.5C-47.8 184.5 -95.7 164 -136.9 129.9C-178 95.7 -212.5 47.8 -210.9 1.6C-209.2 -44.5 -171.4 -89.1 -130.3 -141.1C-89.1 -193.1 -44.5 -252.5 17.5 -270C79.5 -287.5 159.1 -263.1 214.1 -211.1"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+        <img id="person2" src="Assets/person2.png">
+
+
+        <h3 id="caption3">Where Style Meets Sound</h3>
+        <p id="p3">Our headphones combine sleek design with<br>superior audio quality.</p>
+        <svg id="blob3" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(460.75469983429923 215.28521357813042)">
+                <path
+                    d="M142 -113.9C198.3 -85.8 267.9 -42.9 282.5 14.6C297.1 72.1 256.7 144.2 200.5 193.6C144.2 242.9 72.1 269.5 -0.7 270.2C-73.5 270.9 -147.1 245.7 -192.4 196.4C-237.7 147.1 -254.9 73.5 -243.7 11.2C-232.5 -51.1 -193 -102.3 -147.6 -130.4C-102.3 -158.5 -51.1 -163.7 -4.1 -159.5C42.9 -155.4 85.8 -142 142 -113.9"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+        <img id="person3" src="Assets/person3.png">
+    </section>
+
+    <div class="spacer layer2"></div>
+
+    <!-- Products -->
+    <section class="green" id="products-section">
+        <!-- <h1>Products</h1> -->
+        <div class="wrapper">
+            <div class="container1">
+                <input type="radio" name="slide" id="cl">
+                <label for="cl" class="card">
+                    <div class="row">
+                        <div class="icon1">1</div>
+                        <div class="description">
+                            <h4>Zeb Thunder Pro (Ocean Blue)</h4>
+                            <p>Evoke a sense of calm and tranquility, mirroring the serene hues of the sea.</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c1">
+                <label for="cl" class="card">
+                    <div class="row">
+                        <div class="icon1">2</div>
+                        <div class="description">
+                            <h4>Zeb Thunder Pro (Carbon Black)</h4>
+                            <p>Exude a timeless elegance and effortless style that complements any look.</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer layer3"></div>
+
+    <!-- Features -->
+    <section class="yellow" id="features-section">
+        <!-- <h1>Features(Timeline)</h1> -->
+        <div class="features">
+            <div class="container">
+                <ul>
+                    <li>
+                        <h3 class="title">Modern Design</h3>
+                        <p>Unleash the future of sound. Our headphones seamlessly blend cutting-edge design with immersive audio, for a listening experience that's as stylish as it is powerful.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">Modern Design</span> -->
+                    </li>
+                    <li>
+                        <h3 class="title">Voice Control</h3>
+                        <p>Our headphones seamlessly integrate voice control, letting you manage music, calls, and even your digital assistant powered by Google Assistant and Apple Siri.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">Voice Control</span> -->
+                    </li>
+                    <li>
+                        <h3 class="title">Lightweight and Comfortable</h3>
+                        <p>Crafted with premium materials for all-day comfort. Our lightweight headphones disappear on your ears, while delivering powerful sound.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">Lightweight and Comfortable</span> -->
+                    </li>
+                    <li>
+                        <h3 class="title">Type-C Charging</h3>
+                        <p>Forget tangled wires and frustration. Our headphones feature convenient Type-C charging for a fast and easy power-up experience. Spend less time waiting and more time enjoying your favorite music.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">Type-C Charging</span> -->
+                    </li>
+                    <li>
+                        <h3 class="title">Deep Bass</h3>
+                        <p> Experience deep, powerful bass that brings your music to life. Our headphones are engineered to deliver rich, immersive audio, perfect for bass lovers who crave that extra punch.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">Deep Bass</span> -->
+                    </li>
+                    <li>
+                        <h3 class="title">Bluetooth 5</h3>
+                        <p>Experience crystal-clear wireless audio with Bluetooth 5.0. Enjoy a strong, stable connection with lower power consumption, so you can listen longer with fewer dropouts.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">Bluetooth 5</span> -->
+                    </li>
+                    <li>
+                        <h3 class="title">21+ Hours Playback</h3>
+                        <p>Our headphones boast an incredible 21+ hours of playback on a single charge. Keep the music pumping from sunrise to sunset, and beyond. No more scrambling for a charger, just endless listening enjoyment.</p>
+                        <span class="circle"></span>
+                        <!-- <span class="feature1">21+ Hours Playback</span> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li>
+                <a href="https://www.instagram.com/zebronics/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Zebronics/" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/zebronics/?originalSubdomain=in" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@zebronics" target="_blank">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#products-section">Products</a></li>
+            <li><a href="#features-section">Features</a></li>
+        </ul>
+        <p>© Anchit Das(500107460) | Web Technologies Project</p>
+    </footer>
+</body>
+
+</html>

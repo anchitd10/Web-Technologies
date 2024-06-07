@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+    <script src="q3.js"></script>
+</head>
+<body>
+    <form id="courseRegistrationForm" onsubmit="return validateForm()">
+        <h2>Course Registration Form</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age">
+        <br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="">--Select a course--</option>
+            <option value="CS101">Computer Science 101</option>
+            <option value="MATH201">Mathematics 201</option>
+            <option value="ENG301">English 301</option>
+        </select>
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

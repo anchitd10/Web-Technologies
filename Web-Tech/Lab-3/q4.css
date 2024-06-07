@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.zoom-box {
+    width: 100px;
+    height: 100px; 
+    background-color: #4CAF50; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.zoom-box:hover {
+    animation: zoomInOut 0.3s forwards;
+}
+
+.zoom-box:not(:hover) {
+    animation: zoomInOut 0.3s reverse;
+}
